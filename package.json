@@ -1,0 +1,17 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "Welcome to my study note, where I've documented everything I've learned during my training with [Hack Your Future Belgium](https://github.com/HYF-Class22). This serves as both a personal reference and a valuable resource for anyone interested in Full Stack Development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cspell": "^8.3.2",
+    "format": "^0.2.2",
+    "lint": "^0.8.19",
+    "markdownlint": "^0.33.0"
+  }
+}
