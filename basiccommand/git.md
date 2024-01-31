@@ -94,7 +94,7 @@ In short, GitHub is where you store your project, commit is like saving changes,
 
   - `git merge origin main`: Stay current with GitHub changes.
 
-### Resolve Merge Conflict
+## Resolve Merge Conflict
 
 1. `git checkout <your-branch-name>``
 2. `git fetch --all`
