@@ -93,7 +93,7 @@ When you've made changes to a branch and want them to be included in the main br
 
 ## Resolve Merge Conflict
 
-1. `git checkout <your-branch-name>``
+1. `git checkout <your-branch-name>`
 2. `git fetch --all`
 3. `git merge main`
 4. Resolve Conflicts:
