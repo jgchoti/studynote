@@ -2,6 +2,9 @@
 
 - [Guide to using git and GitHub](#guide-to-using-git-and-github)
   - [Git Commands Cheat Sheet](#git-commands-cheat-sheet)
+  - [GitHub and Committing Changes](#github-and-committing-changes)
+  - [GitHub Setup Steps](#github-setup-steps)
+  - [Pull Request (PR)](#pull-request-pr)
   - [Resolve Merge Conflict](#resolve-merge-conflict)
 
 ## Git Commands Cheat Sheet
@@ -59,7 +62,7 @@
 
   - `git merge origin main`: Stay current with GitHub changes.
 
-<details><summary><h2>GitHub and Committing Changes</h2></summary>
+## GitHub and Committing Changes
 
 When you commit changes in Git, it's like saving your game. But to share it or collaborate with others, you use a website called [GitHub](http://www.github.com).
 
@@ -71,9 +74,7 @@ When you commit changes in Git, it's like saving your game. But to share it or c
 
 In short, GitHub is where you store your project, commit is like saving changes, and pushing is like sharing or backing up your work online. 🚀
 
-</details>
-<details>
-  <summary><h2>GitHub Setup Steps</h2></summary>
+## GitHub Setup Steps
 
 - **Initialize Git**: Run git init to initialize a new Git repository.
 - **Add Remote Origin**: Use `git remote add origin <SSH link>` to link your local repository to a remote GitHub repository.
@@ -81,20 +82,16 @@ In short, GitHub is where you store your project, commit is like saving changes,
 - **Commit Changes**: Run `git commit -m "Add existing project files to Git"` to commit the staged changes.
 - **Add Remote Origin (Optional)**: If you haven't added the remote origin earlier, you can do so now with `git remote add origin <SSH link>` to establish the connection to your GitHub repository.
 
-  </details>
+## Pull Request (PR)
 
-  <details>
-  <summary><h2>Pull Request (PR)</h2></summary>
-  When you've made changes to a branch and want them to be included in the main branch (typically 'main' or 'master') on GitHub, you create a Pull Request (PR). It's like leaving a note for the owner, asking them to check and merge your changes.
+When you've made changes to a branch and want them to be included in the main branch (typically 'main' or 'master') on GitHub, you create a Pull Request (PR). It's like leaving a note for the owner, asking them to check and merge your changes.
 
-  The process is quite simple:
+The process is quite simple:
 
-  1. You make a Pull Request on GitHub.
-  2. The owner reviews your changes.
-  3. If everything looks good, they click **“merge pull request”**.
-  4. Your changes are then merged into the main branch.
-
-  </details>
+1. You make a Pull Request on GitHub.
+2. The owner reviews your changes.
+3. If everything looks good, they click **“merge pull request”**.
+4. Your changes are then merged into the main branch.
 
 ## Resolve Merge Conflict
 
