@@ -86,8 +86,6 @@ In short, GitHub is where you store your project, commit is like saving changes,
 
 When you've made changes to a branch and want them to be included in the main branch (typically 'main' or 'master') on GitHub, you create a Pull Request (PR). It's like leaving a note for the owner, asking them to check and merge your changes.
 
-The process is quite simple:
-
 1. You make a Pull Request on GitHub.
 2. The owner reviews your changes.
 3. If everything looks good, they click **“merge pull request”**.
