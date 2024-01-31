@@ -17,6 +17,7 @@ I want to emphasize that while I've put effort into compiling accurate informati
 Feel free to explore different sections of this repository:
 
 **[Git and GitHub](https://github.com/jgchoti/studynote/blob/main/basiccommand/git.md):** Covers the basics of Git and GitHub.
+
 **[NPM Command List](https://github.com/jgchoti/studynote/blob/main/basiccommand/npm.md):** NPM command list
 
 <!-- - **[JavaScript Fundamentals](link-to-javascript-fundamentals):** Covers the basics of JavaScript. -->
