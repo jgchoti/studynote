@@ -41,6 +41,8 @@ In short, GitHub is where you store your project, commit is like saving changes,
 
 ## Git Commands Cheat Sheet
 
+# Git Commands Cheat Sheet
+
 - **Start Project:**
 
   - `git init`: Begin a new project.
@@ -70,6 +72,7 @@ In short, GitHub is where you store your project, commit is like saving changes,
 - **Connect to GitHub:**
 
   - `git remote add origin [repo link]`: Connect to GitHub.
+  - `git fetch --all`: Fetch all changes from all remotes.
 
 - **Send Changes to GitHub:**
 
@@ -80,10 +83,6 @@ In short, GitHub is where you store your project, commit is like saving changes,
 
   - `git checkout -b <name of branch>`: Create a new branch.
   - `git branch`: See all branches.
-
-- **Merge Changes:**
-
-  - `git merge`: Combine changes from different branches.
 
 - **Stay Updated:**
 
