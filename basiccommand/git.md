@@ -38,3 +38,60 @@ In short, GitHub is where you store your project, commit is like saving changes,
     4. Your changes are then merged into the main branch.
     
   </details>
+
+# Git Commands Cheat Sheet
+
+- **Start Project:**
+
+  - `git init`: Begin a new project.
+
+- **Save Changes:**
+
+  - `git add .`: Save all changes.
+  - `git add index.html`: Save specific changes.
+
+- **Record Changes:**
+
+  - `git commit -m "Add existing file"`: Describe and save changes.
+
+- **Check Status:**
+
+  - `git status`: See what's happening.
+
+- **Review History:**
+
+  - `git log`: Check project history.
+  - `git log --oneline`: View a simplified commit log in one line.
+
+- **Navigate Time:**
+
+  - `git checkout <# of commit>`: Go back in time.
+
+- **Connect to GitHub:**
+
+  - `git remote add origin [repo link]`: Connect to GitHub.
+
+- **Send Changes to GitHub:**
+
+  - `git push -u origin master`: Share changes on GitHub (master).
+  - `git push -u origin <branchname>`: Share changes on a branch.
+
+- **Create & Manage Branches:**
+
+  - `git checkout -b <name of branch>`: Create a new branch.
+  - `git branch`: See all branches.
+
+- **Merge Changes:**
+
+  - `git merge`: Combine changes from different branches.
+
+- **Stay Updated:**
+
+  - `git pull origin master`: Get the latest changes from GitHub.
+
+- **Fix Conflicts Locally:**
+
+  - `git merge main`: Resolve local conflicts.
+
+- **Update with Main on GitHub:**
+  - `git merge origin main`: Stay current with GitHub changes.
