@@ -41,8 +41,6 @@ In short, GitHub is where you store your project, commit is like saving changes,
 
 ## Git Commands Cheat Sheet
 
-# Git Commands Cheat Sheet
-
 - **Start Project:**
 
   - `git init`: Begin a new project.
@@ -93,4 +91,18 @@ In short, GitHub is where you store your project, commit is like saving changes,
   - `git merge main`: Resolve local conflicts.
 
 - **Update with Main on GitHub:**
+
   - `git merge origin main`: Stay current with GitHub changes.
+
+### Resolve Merge Conflict
+
+1. `git checkout <your-branch-name>``
+2. `git fetch --all`
+3. `git merge main`
+4. Resolve Conflicts:
+   1. Open the conflicted file(s) in your code editor.
+   2. Locate and resolve the conflict markers (<<<<<<<, =======, >>>>>>>).
+   3. Decide which changes to keep and which to discard.
+5. `git add <conflicted-file>`
+6. `git commit -m "Resolve merge conflict"`
+7. `git push origin <your-branch-name>`
