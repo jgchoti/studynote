@@ -39,7 +39,7 @@ In short, GitHub is where you store your project, commit is like saving changes,
     
   </details>
 
-# Git Commands Cheat Sheet
+## Git Commands Cheat Sheet
 
 - **Start Project:**
 
