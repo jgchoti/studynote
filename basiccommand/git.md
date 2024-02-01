@@ -6,6 +6,7 @@
   - [GitHub Setup Steps](#github-setup-steps)
   - [Pull Request (PR)](#pull-request-pr)
   - [Resolve Merge Conflict](#resolve-merge-conflict)
+  - [Update branch with Main](#update-branch-with-main)
 
 ## Git Commands Cheat Sheet
 
@@ -87,16 +88,16 @@ and pushing is like sharing or backing up your work online. 🚀
   - Run `git init` to initialize a new Git repository.
 - **Add Remote Origin**
   - Use `git remote add origin <SSH link>` to link your local
-repository to a remote GitHub repository.
+    repository to a remote GitHub repository.
 - **Add Changes**
   - Use `git add .` to add all changes for commit.
 - **Commit Changes**
   - Run `git commit -m "Add existing project files to Git"` to
-commit the changes.
+    commit the changes.
 - **Add Remote Origin (Optional)**
   - If you haven't added the remote origin earlier,
-you can do so now with `git remote add origin <SSH link>` to establish the connection
-to your GitHub repository.
+    you can do so now with `git remote add origin <SSH link>` to establish the connection
+    to your GitHub repository.
 
 ## Pull Request (PR)
 
@@ -121,3 +122,10 @@ It's like leaving a note for the owner, asking them to check and merge your chan
 5. `git add <conflicted-file>`
 6. `git commit -m "Resolve merge conflict"`
 7. `git push origin <your-branch-name>`
+
+## Update branch with Main
+
+1. `git checkout <your-branch-name>`
+2. Pull Latest Changes from Main:
+   1. `git pull origin main`
+   2. `git pull --rebase origin main`
