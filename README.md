@@ -6,7 +6,7 @@ Welcome to my study note, where I've documented everything I've learned during m
 
 1. **Personal Reference:** This document is crafted to deepen my understanding of Full Stack Development concepts, languages, and frameworks.
 
-2. **Future Resource:** It acts as a go-to resource for me in the future, serving as a quick reference guide for various topics.
+2. **Future Resource:** It acts as a go-to resource for "me" in the future, serving as a quick reference guide for various topics.
 
 ## Disclaimer
 
