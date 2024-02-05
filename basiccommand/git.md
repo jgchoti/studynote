@@ -127,5 +127,5 @@ It's like leaving a note for the owner, asking them to check and merge your chan
 
 1. `git checkout <your-branch-name>`
 2. Pull Latest Changes from Main:
-   1. `git pull origin main`
-   2. `git pull --rebase origin main`
+   - `git pull origin main` **or**
+   - `git pull --rebase origin main` (Re-base)
