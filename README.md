@@ -29,4 +29,6 @@ Feel free to explore different sections of this repository:
 
 If you notice any inaccuracies or have suggestions for improvement, please feel free to contribute by submitting a pull request. Your feedback is highly appreciated!
 
+---
+
 Happy learning! 🚀
