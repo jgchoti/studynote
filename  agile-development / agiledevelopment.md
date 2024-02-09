@@ -23,38 +23,30 @@
 - **Naming conventions** play a crucial role in maintaining organizational
   clarity within an
   Agile development environment.
-- Whether using camel case, snake case, kebab case, or pascal case, consistent and clear naming
+- Whether using **camel case,
+  snake case, kebab case, or pascal case,** consistent and
+  clear naming
   conventions contribute to effective communication and collaboration.
 
-camel case
+💡 **camelCase** : JavaScript Variables and Function Names:
 
-<aside>
-💡 hackYourFuture
+> hackYourFuture
 
-</aside>
+💡 **snake_case**: File Names (for Python or Server-Side JavaScript/Node.js):
 
-snake case
+> hack_your_future
 
-<aside>
-💡 hack_your_future
+💡 **kebab-case**: file, folder, branches'names and CSS/IDs Classes
 
-</aside>
+> hack-your-future
 
-kebab case = file/folder- name of branch
+💡 **PascalCase** : JavaScript/TypeScript Classes
 
-<aside>
-💡 hack-your-future
-
-</aside>
-
-pascal case
-
-<aside>
-💡 HackYourFuture
-
-</aside>
+> HackYourFuture
 
 ### Branch Names
 
-- **Branch names** are structured according to established practices, such as indicating the type of work or feature in the branch.
-- This ensures that each branch corresponds to a specific task or user story, facilitating efficient tracking and collaboration among team members.
+- **Branch names** are structured according to established practices, such as indicating
+  the type of work or feature in the branch.
+- This ensures that each branch corresponds to a specific task or user story, facilitating
+  efficient tracking and collaboration among team members.
