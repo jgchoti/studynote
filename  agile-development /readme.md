@@ -5,8 +5,8 @@ along with specific instructions for creating and managing projects.
 
 ## Table of Contents
 
-- [Agile Development Process and Best Practices](agile-development/agiledevelopment.md)
-- [Specific Instructions for Creating and Managing Projects](agile-development/agileinproject.md)
+- [Agile Development Process and Best Practices](agiledevelopment.md)
+- [Specific Instructions for Creating and Managing Projects](agileinproject.md)
 
 ## Overview
 
