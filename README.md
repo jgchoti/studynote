@@ -20,7 +20,7 @@ Feel free to explore different sections of this repository:
 
 **[NPM Command List](https://github.com/jgchoti/studynote/blob/main/basiccommand/npm.md):** NPM command list
 
-**[Agile Development ](https://github.com/jgchoti/studynote/blob/main/basiccommand/npm.md):** Agile Development processes and best practices
+**[Agile Development](https://github.com/jgchoti/studynote/tree/main/agile-development):** Agile Development processes and best practices
 
 <!-- - **[JavaScript Fundamentals](link-to-javascript-fundamentals):** Covers the basics of JavaScript. -->
 <!-- - **[Backend Technologies](link-to-backend-technologies):** Explores server-side development using Node.js, Express, and more. -->
