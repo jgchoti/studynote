@@ -24,7 +24,7 @@
 - UI focuses on **making things look nice with layouts and designs.**
 - Think of it like a cake needing both the cake part and the icing to be good.
 
-| Aspect             | User Experience (UX)                   | User Interface (UI)                         |
+| Aspect             | User Experience (UX)                   | User Interface (UI)|
 |--------------------|----------------------------------------|--------------------------------------------|
 | Definition|Comprehensive user interaction| Specific visual touchpoints and cosmetics|
 | Scope         | Entire user journey  | Visual and interactive components|
