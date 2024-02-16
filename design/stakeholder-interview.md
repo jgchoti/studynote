@@ -40,11 +40,13 @@ narrowed-down questions.
 - Analysis can be lightweight or systematic based on the number of stakeholders interviewed.
 - Thematic analysis helps identify concerns, success metrics, and
 ideas mentioned by multiple stakeholders.
-- Takeaways inform project aspects such as research, ideation, priorities, timeline, resources, and stakeholder-engagement plans.
+- Takeaways inform project aspects such as research, ideation, priorities,
+timeline, resources, and stakeholder-engagement plans.
 
-## Conclusion:
+## Conclusion
 
-- UX-stakeholder interviews shape the design process, define success metrics, and save time and resources.
+- UX-stakeholder interviews shape the design process, define success metrics,
+and save time and resources.
 - Lay the foundation for successful relationships with stakeholders.
 
 [Reference Link: Stakeholder Interviews 101](https://www.nngroup.com/articles/stakeholder-interviews/)
