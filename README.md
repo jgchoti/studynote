@@ -22,7 +22,7 @@ Feel free to explore different sections of this repository:
 
 **[Agile Development](https://github.com/jgchoti/studynote/tree/main/agile-development):** Agile Development processes and best practices
 
-**[Design](studynote/design/README.md):** Cover the basic of design principles.
+**[Design](https://github.com/jgchoti/studynote/tree/main/design):** Cover the basic of design principles.
 
 <!-- - **[JavaScript Fundamentals](link-to-javascript-fundamentals):** Covers the basics of JavaScript. -->
 <!-- - **[Backend Technologies](link-to-backend-technologies):** Explores server-side development using Node.js, Express, and more. -->
