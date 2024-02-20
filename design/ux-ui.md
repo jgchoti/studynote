@@ -1,4 +1,4 @@
-# **UX vs. UI
+# UX vs. UI
 
 ## User Experience (UX)
 
