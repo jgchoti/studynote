@@ -1,7 +1,7 @@
 # Study Notes - Design
 
 This comprehensive study guide delves into various aspects of design,
-providing a solid foundation for understanding key concepts.
+providing a foundation for understanding key concepts.
 
 ## Table of Contents
 
