@@ -16,11 +16,13 @@ I want to emphasize that while I've put effort into compiling accurate informati
 
 Feel free to explore different sections of this repository:
 
-**[Git and GitHub](studynote/basiccommand/README.md):** Covers the basics of Git and GitHub.
+**[Git and GitHub](https://github.com/jgchoti/studynote/blob/main/basiccommand/git.md):** Covers the basics of Git and GitHub.
 
 **[NPM Command List](https://github.com/jgchoti/studynote/blob/main/basiccommand/npm.md):** NPM command list
 
 **[Agile Development](https://github.com/jgchoti/studynote/tree/main/agile-development):** Agile Development processes and best practices
+
+**[Design](studynote/design/README.md):** Cover the basic of design principles.
 
 <!-- - **[JavaScript Fundamentals](link-to-javascript-fundamentals):** Covers the basics of JavaScript. -->
 <!-- - **[Backend Technologies](link-to-backend-technologies):** Explores server-side development using Node.js, Express, and more. -->
