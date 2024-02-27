@@ -24,7 +24,7 @@ Feel free to explore different sections of this repository:
 
 **[Design](https://github.com/jgchoti/studynote/tree/main/design):** Cover the basic of design principles.
 
-<!-- - **[JavaScript Fundamentals](link-to-javascript-fundamentals):** Covers the basics of JavaScript. -->
+**[JavaScript Fundamentals](https://github.com/jgchoti/studynote/tree/main/learning-js):** Covers the basics of JavaScript.
 <!-- - **[Backend Technologies](link-to-backend-technologies):** Explores server-side development using Node.js, Express, and more. -->
 <!-- - **[Frontend Technologies](link-to-frontend-technologies):** Dives into client-side development with HTML, CSS, and popular frameworks. -->
 <!-- - **[Database Management](link-to-database-management):** Discusses database concepts and practical usage. -->
