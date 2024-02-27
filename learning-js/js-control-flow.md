@@ -172,7 +172,7 @@ do {
 ```
 
 
-- ***`try...catch***`*** : It's a way to handle potential issues or errors in your code without letting them crash your entire program.
+- ***`try...catch`*** : It's a way to handle potential issues or errors in your code without letting them crash your entire program.
 
 ```javascript
 try {
