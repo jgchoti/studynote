@@ -30,7 +30,9 @@ Computer programs transform data from one form to another, taking input data and
 producing output data through a series of instructions.
 Understanding the flow of data in a program is crucial for comprehending its functionality.
 
-| **III. Three Audiences**                 |                                                                                  |
+## Audiences
+
+| **Three Audiences**                 |                                                                                  |
 | ---------------------------------------- | -------------------------------------------------------------------------------- |
 | **A. Developers**                        |                                                                                  |
 | Code Formatting:                         | Proper formatting enhances code readability and ease of maintenance.            |
