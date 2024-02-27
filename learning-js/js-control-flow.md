@@ -58,7 +58,7 @@ for (let i = 0; i < 5; i++) {
 
 >In this example, the program starts counting from 0, stops when it reaches 5, and adds 1 each time. So, it prints the numbers 0 to 4.
 
-## `while` Loop 
+## III. `while` Loop 
 
 The while loop is another way for a program to keep doing something as long as ***a certain rule is true.*** Here's how it works:
 
@@ -81,7 +81,7 @@ while (i < 5) {
 
 >the program keeps counting from 0 to 4 as long as i is less than 5.
 
-## `switch` Statement
+## IV. `switch` Statement
 
 The`switch` statement is like a ***traffic cop*** directing your program based on different situations. It helps your program make decisions in a cleaner way than using many if statements. Here's how it looks:
 
@@ -136,7 +136,7 @@ switch (day) {
 - The switch statement is a powerful tool for handling multiple conditions, especially when you have several cases to consider.
 - It enhances code readability and helps organize decision-making logic.
 
-# Other Control Flow Structures
+# V. Other Control Flow Structures
 
 - ***`for...in` Loop***: Go through the properties of an `object` and picks up the names of each property during each turn.
 
