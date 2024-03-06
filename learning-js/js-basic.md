@@ -4,9 +4,9 @@ summary note from [You Don't Know JS: Up & Going - hapter 1: Into Programming](h
 
 ### Basics of Code
 
-- **Code:** Special instructions for computers.
-- **Computer Language:** Set of rules defining valid instructions (_syntax_).
-- **Statements:** Groups of words, numbers, and operators performing specific tasks.
+- **Code:** A set of special instructions that instruct the computer to perform tasks.
+- **Computer Language:** Defines the valid format and combinations of instructions (syntax).
+- **Statements:** Groups of words, numbers, and operators that perform specific tasks.
 
 ### Variables and Expressions
 
@@ -14,9 +14,26 @@ summary note from [You Don't Know JS: Up & Going - hapter 1: Into Programming](h
 - **Expressions:** Combinations of variables, literals, and operators.
 - **Operators:** Symbols like `=`, `*` for operations.
 
+### Example Statement
+
+```javascript
+a = b * 2;
+```
+
+- `a` and `b` are variables, representing values.
+- `2` is a literal value expression.
+- `b` is a variable expression, retrieving its current value.
+- `b * 2` is an arithmetic expression, performing multiplication.
+- `a = b * 2` is an assignment expression, storing the result in variable a.
+
+> tells the computer, roughly, to get the current value stored in the variable `b`,
+> multiply that value by 2, then store the result back into another variable we call `a`
+
 ### Program Execution
 
-- Programs can be interpreted (line by line) or compiled (ahead of time). JavaScript typically compiles.
+- **_Executing_**: Running the program.
+- **_Interpreting_**: Running line by line.
+- **_Compiles_**: Runs ahead of time. JavaScript is compiled.
 
 ### Output
 
@@ -30,6 +47,14 @@ summary note from [You Don't Know JS: Up & Going - hapter 1: Into Programming](h
 ### Operators
 
 - Arithmetic, increment/decrement, equality, comparison, logical, and assignment operators.
+  - **_Math_**: `+` (addition), `-` (subtraction), `*` (multiplication), and `/` (division)
+  - **_Increment/Decrement_**: `++` (increment), `--` (decrement), as in `a++` (similar to `a = a + 1`).
+  - **_Equality_**: - `==` (loose equals) - `===` (strict-equals) - `!=` (loose not-equals) - `!==` (strict not-equals)
+  - **_Comparison_**: `<` (less than), `>` (greater than), `<=` (less than or loose-equals), `>=` (greater than or loose-equals), as in `a <= b`
+  - **_Logical_**: `&&` (and), `||` (or), as in `a || b` that selects either `a` or `b`.
+- The `=` equals operator is used for _assignment_
+  - _Right-hand side_ (source value)
+  - _Left-hand side_ (target variable).
 
 ### Values and Types
 
@@ -38,7 +63,10 @@ summary note from [You Don't Know JS: Up & Going - hapter 1: Into Programming](h
 ### Converting Between Types
 
 - Explicit and implicit coercion.
-- Example: Using `==` converts the left-hand side from string to number for comparison.
+- _explicit_ coercion
+  - `Number(..)` (a built-in function)
+- _implicit_ coercion
+  - Example: Using `==` converts the left-hand side from string to number for comparison.
 
 ### Code Comments
 
@@ -71,5 +99,134 @@ summary note from [You Don't Know JS: Up & Going - hapter 1: Into Programming](h
 ### Scope
 
 - Lexical scope determines variable accessibility within functions.
+- Only code inside that function can access that function's scoped variables.
+- code in one scope can access variables of either that scope or any scope outside of it.
+
+### Practice
+
+#### Phone Purchase Program
+
+1. **Purchase Loop:**
+
+   - Use a loop to buy phones and accessories until out of money or reaching spending threshold.
+
+2. **Calculate Purchase Amount:**
+
+   - Calculate total purchase amount, including phones, accessories, and tax.
+
+3. **Print Formatted Purchase Amount:**
+
+   - Print the calculated purchase amount in a properly formatted manner.
+
+4. **Check Affordability:**
+
+   - Compare purchase amount with bank account balance to determine affordability.
+
+5. **Constants and Variables:**
+
+   - Set up constants for tax rate, phone price, accessory price, and spending threshold.
+   - Create a variable for bank account balance.
+
+6. **Functions:**
+
+   - Define functions for calculating tax.
+   - Define a function for formatting the price with a "$" and rounding to two decimal places.
+
+7. **Bonus Challenge:**
+   - Incorporate user input, such as prompting for the bank account balance.
+   - Encourage creativity and have fun with the implementation.
+
+```javascript
+const TAX_RATE = 0.21;
+const PHONE_PRICE = 350;
+const ACCESSORY_PRICE = 5;
+const SPENDING_THRESHOLD = 1000;
+
+function calculateTax(price) {
+  let priceWithTax = price * TAX_RATE;
+  return priceWithTax.toFixed(2);
+}
+
+function toBuyAccessory(bankAccountBalance, amountPhone) {
+  let accessoryPriceWithTax = ACCESSORY_PRICE + calculateTax(ACCESSORY_PRICE);
+  totalAccessoryPurchase = amountPhone * accessoryPriceWithTax;
+  if (
+    totalAccessoryPurchase <= SPENDING_THRESHOLD &&
+    totalAccessoryPurchase <= bankAccountBalance
+  ) {
+    bankAccountBalance = bankAccountBalance - totalAccessoryPurchase;
+    if (amountPhone === 1) {
+      console.log(
+        "You can buy " +
+          amountPhone +
+          " phone with an accessory and you will have $" +
+          bankAccountBalance.toFixed(2) +
+          " left in your bank account."
+      );
+    } else {
+      console.log(
+        "You can buy " +
+          amountPhone +
+          " phones with accessory for each phone and you will have $" +
+          bankAccountBalance.toFixed(2) +
+          " left in your bank account."
+      );
+    }
+  } else if (totalAccessoryPurchase > SPENDING_THRESHOLD) {
+    console.log(
+      "You can buy " +
+        amountPhone +
+        " phones but your purchase amount is more than your mental spending threshold"
+    );
+  } else {
+    console.log(
+      "You can buy " +
+        amountPhone +
+        " phones but you can not afford any accessory for your phone"
+    );
+  }
+}
+
+function toBuyPhone(bankAccountBalance) {
+  let phonePriceWithTax = PHONE_PRICE + calculateTax(PHONE_PRICE);
+  if (phonePriceWithTax <= bankAccountBalance) {
+    let amountPhone = bankAccountBalance / phonePriceWithTax;
+    amountPhone = Math.floor(amountPhone);
+    bankAccountBalance = bankAccountBalance - amountPhone * phonePriceWithTax;
+    toBuyAccessory(bankAccountBalance, amountPhone);
+  } else {
+    console.log(
+      "You have $" +
+        bankAccountBalance.toFixed(2) +
+        " in your bank account. You can not afford a phone priced at $" +
+        PHONE_PRICE.toFixed(2) +
+        " with tax"
+    );
+    let additionalBalance = phonePriceWithTax - bankAccountBalance;
+    console.log(
+      "You will need an additional  $" +
+        additionalBalance.toFixed(2) +
+        " in your bank account to buy a phone"
+    );
+  }
+}
+
+function inputBankAccount() {
+  let bankAccountBalance = prompt("Please input your bank account balance:");
+  bankAccountBalance = parseFloat(bankAccountBalance);
+  if (
+    isNaN(bankAccountBalance) ||
+    bankAccountBalance == " " ||
+    bankAccountBalance === null
+  ) {
+    console.log("Invalid input.");
+    inputBankAccount();
+  } else {
+    toBuyPhone(bankAccountBalance);
+  }
+}
+
+inputBankAccount();
+```
 
 This chapter provides a comprehensive introduction to programming concepts, JavaScript syntax, and fundamental constructs. It covers variables, expressions, operators, control flow, functions, and more, laying a strong foundation for readers new to programming or JavaScript.
