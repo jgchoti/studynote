@@ -44,7 +44,7 @@ stored in the variable on the left side.
 | 7    | Symbol      | Represents unique and immutable values to create completely unique identifiers|
 | 8    | Object      | Represents a collection of key-value pairs.            |
 
-### Difference between undefined and null
+#### Difference between undefined and null
 
 |                  | Undefined                                                | Null                               |
 |------------------|----------------------------------------------------------|------------------------------------|
@@ -55,6 +55,17 @@ stored in the variable on the left side.
 | **Assignment**   | Can be unintentionally assigned by declaring a variable without assigning a value. | Explicitly assigned to a variable to represent the absence of value. |
 
 [Undefined Vs Null in JavaScript](https://www.geeksforgeeks.org/undefined-vs-null-in-javascript/)
+
+#### Boolean Values in JavaScript
+
+In JavaScript, the following values evaluate to false in a boolean context:
+- false
+- null
+- undefined
+- 0
+- -0
+- NaN
+- An empty string ('')
 
 ## Example Scenario
 
