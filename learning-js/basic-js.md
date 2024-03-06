@@ -1,6 +1,6 @@
 # Into Programming
 
-summary note from (You Don't Know JS: Up & Going - hapter 1: Into Programming)[https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/up%20%26%20going/ch1.md]
+summary note from [You Don't Know JS: Up & Going - hapter 1: Into Programming](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/up%20%26%20going/ch1.md)
 
 ### Basics of Code
 
