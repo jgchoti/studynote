@@ -31,7 +31,7 @@ stored in the variable on the left side.
 - Variables can store various types of data.
 - In the provided example, a string of characters (a string) is stored in the variable.
 
-## Seven Primary Data Types in JavaScript
+## Primary Data Types in JavaScript
 
 | #    | Data Type   | |
 | ---- | ----------- | ----------------------------------------------------- |
@@ -43,6 +43,18 @@ stored in the variable on the left side.
 | 6    | String      | Represents textual data, enclosed in single or double quotes. |
 | 7    | Symbol      | Represents unique and immutable values to create completely unique identifiers|
 | 8    | Object      | Represents a collection of key-value pairs.            |
+
+### Difference between undefined and null
+
+|                  | Undefined                                                | Null                               |
+|------------------|----------------------------------------------------------|------------------------------------|
+| **Definition**   | A variable has been declared but has not yet been assigned a value. | An assignment value representing no value. |
+| **Origin**       | An ECMAScript (ES1) feature.                               | A primitive value in JavaScript.   |
+| **Syntax**       | Does not have any specific syntax. It can be assigned to a variable, but it is not typically done intentionally. | `null`                             |
+| **Type**         | Not a global property.                                    | A global property.                  |
+| **Assignment**   | Can be unintentionally assigned by declaring a variable without assigning a value. | Explicitly assigned to a variable to represent the absence of value. |
+
+[Undefined Vs Null in JavaScript](https://www.geeksforgeeks.org/undefined-vs-null-in-javascript/)
 
 ## Example Scenario
 
