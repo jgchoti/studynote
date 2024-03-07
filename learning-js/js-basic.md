@@ -102,6 +102,8 @@ a = b * 2;
 - Only code inside that function can access that function's scoped variables.
 - code in one scope can access variables of either that scope or any scope outside of it.
 
+---
+
 ### Practice
 
 #### Phone Purchase Program
