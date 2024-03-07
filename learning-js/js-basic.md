@@ -124,7 +124,7 @@ a = b * 2;
 
 5. **Constants and Variables:**
 
-   - Set up constants for tax rate, phone price, accessory price, and spending threshold.
+   - Set up constants for tax rate, phone price, and accessory price.
    - Create a variable for bank account balance.
 
 6. **Functions:**
@@ -133,68 +133,20 @@ a = b * 2;
    - Define a function for formatting the price with a "$" and rounding to two decimal places.
 
 7. **Bonus Challenge:**
-   - Incorporate user input, such as prompting for the bank account balance.
+   - Incorporate user input, such as prompting for the bank account balance, and spending threshold.
    - Encourage creativity and have fun with the implementation.
 
 ```javascript
 const TAX_RATE = 0.21;
 const PHONE_PRICE = 350;
 const ACCESSORY_PRICE = 5;
-const SPENDING_THRESHOLD = 1000;
 
-function calculateTax(price) {
-  let priceWithTax = price * TAX_RATE;
-  return priceWithTax.toFixed(2);
-}
-
-function toBuyAccessory(bankAccountBalance, amountPhone) {
-  let accessoryPriceWithTax = ACCESSORY_PRICE + calculateTax(ACCESSORY_PRICE);
-  totalAccessoryPurchase = amountPhone * accessoryPriceWithTax;
-  if (
-    totalAccessoryPurchase <= SPENDING_THRESHOLD &&
-    totalAccessoryPurchase <= bankAccountBalance
-  ) {
-    bankAccountBalance = bankAccountBalance - totalAccessoryPurchase;
-    if (amountPhone === 1) {
-      console.log(
-        "You can buy " +
-          amountPhone +
-          " phone with an accessory and you will have $" +
-          bankAccountBalance.toFixed(2) +
-          " left in your bank account."
-      );
-    } else {
-      console.log(
-        "You can buy " +
-          amountPhone +
-          " phones with accessory for each phone and you will have $" +
-          bankAccountBalance.toFixed(2) +
-          " left in your bank account."
-      );
-    }
-  } else if (totalAccessoryPurchase > SPENDING_THRESHOLD) {
-    console.log(
-      "You can buy " +
-        amountPhone +
-        " phones but your purchase amount is more than your mental spending threshold"
-    );
-  } else {
-    console.log(
-      "You can buy " +
-        amountPhone +
-        " phones but you can not afford any accessory for your phone"
-    );
-  }
-}
-
-function toBuyPhone(bankAccountBalance) {
-  let phonePriceWithTax = PHONE_PRICE + calculateTax(PHONE_PRICE);
-  if (phonePriceWithTax <= bankAccountBalance) {
-    let amountPhone = bankAccountBalance / phonePriceWithTax;
-    amountPhone = Math.floor(amountPhone);
-    bankAccountBalance = bankAccountBalance - amountPhone * phonePriceWithTax;
-    toBuyAccessory(bankAccountBalance, amountPhone);
-  } else {
+function displayPurchaseDetailsWithAddition(
+  phonePriceWithTax,
+  bankAccountBalance,
+  totalPhoneCost
+) {
+  if (phonePriceWithTax < bankAccountBalance) {
     console.log(
       "You have $" +
         bankAccountBalance.toFixed(2) +
@@ -208,12 +160,111 @@ function toBuyPhone(bankAccountBalance) {
         additionalBalance.toFixed(2) +
         " in your bank account to buy a phone"
     );
+  } else {
+    console.log(
+      "You have $" +
+        bankAccountBalance.toFixed(2) +
+        " in your bank account. You can afford a phone priced at $" +
+        PHONE_PRICE.toFixed(2) +
+        " with tax but you can not afford to buy an accessory for a phone"
+    );
+    let additionalBalance = totalPhoneCost - bankAccountBalance;
+    console.log(
+      "You will need an additional  $" +
+        additionalBalance.toFixed(2) +
+        " in your bank account to buy a phone with an accessory "
+    );
+  }
+}
+function displayPurchaseAdjustThreshold(
+  phonesToBuy,
+  bankAccountBalance,
+  totalPhoneCost,
+  spendingThreshold
+) {
+  bankAccountBalance = bankAccountBalance - phonesToBuy * totalPhoneCost;
+  console.log(
+    `Warning: You will exceed your spending threshold of $${spendingThreshold.toFixed(2)}! But you can buy ${phonesToBuy} phones with an accessory for each phone, and you will have $${bankAccountBalance.toFixed(2)} left in your bank account.`
+  );
+}
+
+function displayPurchaseDetails(
+  phonesToBuy,
+  bankAccountBalance,
+  totalPhoneCost
+) {
+  bankAccountBalance = bankAccountBalance - phonesToBuy * totalPhoneCost;
+  if (phonesToBuy === 1) {
+    console.log(
+      `You can buy a phone with an accessory, and you will have $${bankAccountBalance.toFixed(2)} left in your bank account.`
+    );
+  } else {
+    console.log(
+      `You can buy ${phonesToBuy} phones with an accessory for each phone, and you will have $${bankAccountBalance.toFixed(2)} left in your bank account.`
+    );
+  }
+}
+
+function toAffordPhoneWithAccessory(bankAccountBalance, totalPhoneCost) {
+  return totalPhoneCost <= bankAccountBalance;
+}
+
+function calculateTax(price) {
+  let priceWithTax = price * (1 + TAX_RATE);
+  return priceWithTax;
+}
+
+function toBuyAccessory(bankAccountBalance, spendingThreshold) {
+  let accessoryPriceWithTax = parseFloat(
+    calculateTax(ACCESSORY_PRICE).toFixed(2)
+  );
+  let phonePriceWithTax = parseFloat(calculateTax(PHONE_PRICE).toFixed(2));
+  let totalPhoneCost = phonePriceWithTax + accessoryPriceWithTax;
+  let maxPhonesInBalance = Math.floor(bankAccountBalance / totalPhoneCost);
+  let maxPhonesInThreshold = Math.floor(spendingThreshold / totalPhoneCost);
+
+  if (toAffordPhoneWithAccessory(bankAccountBalance, totalPhoneCost)) {
+    if (maxPhonesInThreshold < maxPhonesInBalance) {
+      let phonesToBuy = maxPhonesInBalance;
+      displayPurchaseAdjustThreshold(
+        phonesToBuy,
+        bankAccountBalance,
+        totalPhoneCost,
+        spendingThreshold
+      );
+    } else if (maxPhonesInThreshold === maxPhonesInBalance) {
+      let phonesToBuy = maxPhonesInThreshold;
+      displayPurchaseDetails(phonesToBuy, bankAccountBalance, totalPhoneCost);
+    } else {
+      let phonesToBuy = maxPhonesInBalance;
+      displayPurchaseDetails(phonesToBuy, bankAccountBalance, totalPhoneCost);
+    }
+  } else {
+    displayPurchaseDetailsWithAddition(
+      phonePriceWithTax,
+      bankAccountBalance,
+      totalPhoneCost
+    );
+  }
+}
+
+function toBuyPhone(bankAccountBalance, spendingThreshold) {
+  let phonePriceWithTax = parseFloat(calculateTax(PHONE_PRICE).toFixed(2));
+
+  if (phonePriceWithTax <= bankAccountBalance) {
+    toBuyAccessory(bankAccountBalance, spendingThreshold);
+  } else {
+    displayPurchaseDetailsWithAddition(phonePriceWithTax, bankAccountBalance);
   }
 }
 
 function inputBankAccount() {
   let bankAccountBalance = prompt("Please input your bank account balance:");
+  let spendingThreshold = prompt("Please input your spending threshold:");
+
   bankAccountBalance = parseFloat(bankAccountBalance);
+  spendingThreshold = parseFloat(spendingThreshold);
+
   if (
     isNaN(bankAccountBalance) ||
     bankAccountBalance == " " ||
@@ -222,7 +273,14 @@ function inputBankAccount() {
     console.log("Invalid input.");
     inputBankAccount();
   } else {
-    toBuyPhone(bankAccountBalance);
+    if (
+      isNaN(spendingThreshold) ||
+      spendingThreshold == " " ||
+      spendingThreshold === null
+    ) {
+      spendingThreshold = 0;
+    }
+    toBuyPhone(bankAccountBalance, spendingThreshold);
   }
 }
 
