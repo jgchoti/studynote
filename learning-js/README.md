@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Understanding Programs and Programming Languages](https://github.com/jgchoti/studynote/blob/main/learning-js/programming-languages.md)
+- [Understanding Programs and Programming Languages](https://github.com/jgchoti/studynote/blob/main/learning-js/js-programming-languages.md)
 
 - [Basic JS from "You Don't Know JS: Up & Going, Chapter 1"](https://github.com/jgchoti/studynote/blob/main/learning-js/js-basic.md)
 
