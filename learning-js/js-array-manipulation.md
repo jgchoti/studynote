@@ -50,7 +50,7 @@ console.log(arr); // Output: [0, 1, 2, 3]
 
 ## 5. arr.slicing()
 
-Use `slice()` to extract a portion of an array without modifying the original array.
+Use `slice()` to extract a portion of an array **without modifying** the original array.
 
 Syntax:
 
@@ -65,6 +65,41 @@ let originalArray = [1, 2, 3, 4, 5];
 let slicedArray = originalArray.slice(1, 4); // Extracts elements from index 1 to 3
 console.log(slicedArray); // Output: [2, 3, 4]
 console.log(originalArray); // Output: [1, 2, 3, 4, 5] (original array remains unchanged)
+```
+
+## 6. filter()
+
+This method create a new array with all elements that pass a certain condition provided by a callback function. This method doesn't modify the original array but instead returns a new array containing only the elements that meet the specified criteria.
+
+Syntax:
+
+```javascript
+
+array.filter(callback(element[, index[, array]])[, thisArg])
+```
+
+- callback: A function to test each element of the array. It takes three arguments:
+  - element: The current element being processed in the array.
+  - index (Optional): The index of the current element being processed.
+  - array (Optional): The array filter was called upon.
+- thisArg (Optional): Value to use as this when executing the callback function.
+
+Example:
+
+```JavaScript
+let numbers = [1, 2, 3, 4, 5];
+
+// Filtering even numbers
+let evenNumbers = numbers.filter(function(num) {
+  return num % 2 === 0;
+});
+
+// OR
+
+let evenNumbers = numbers.filter(num => num % 2 === 0);
+
+console.log(evenNumbers); // Output: [2, 4]
+
 ```
 
 ## Summary
