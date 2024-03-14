@@ -1,7 +1,5 @@
 # **Primitive Types & Reference Types**
 
-## Study Note for Beginners
-
 ### 1. Introduction to JavaScript Types:
 
 JavaScript, a dynamically-typed language, categorizes its data into two main types: **Primitive Types** and **Reference Types**.
