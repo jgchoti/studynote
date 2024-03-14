@@ -32,6 +32,8 @@ console.log(objA.value); // Output: 20
 console.log(objB.value); // Output: 20
 ```
 
+![Primitive Types & Reference Types](https://miro.medium.com/v2/resize:fit:1400/1*z1Cacf_OSbsQ1rYYaQsXYA.png)
+
 ### 4. Copying Behavior:
 
 - **Primitive Types (Copied by Value):** Actual value is copied.
