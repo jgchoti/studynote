@@ -8,4 +8,6 @@
 
 - [Fundamentals of JavaScript Variables and Data Types.](https://github.com/jgchoti/studynote/blob/main/learning-js/js-variable.md)
 
+- [Primitive Types and Reference Types](https://github.com/jgchoti/studynote/blob/main/learning-js/js-premitive-ref.md) This note also covers the Copying Behavior in JavaScript, providing an explanation of how copying operates differently for primitive and reference types.
+
 - [Control Flow Structures in JavaScript](https://github.com/jgchoti/studynote/blob/main/learning-js/js-control-flow.md)
