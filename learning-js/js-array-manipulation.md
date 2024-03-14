@@ -102,6 +102,36 @@ console.log(evenNumbers); // Output: [2, 4]
 
 ```
 
+## reduce()
+
+The method in JavaScript is used to apply a function to each element in the array and reduce the array to a single value. It executes a provided function for each value of the array (from left to right), resulting in a single output value. This method is often used for tasks such as summing up values, calculating averages, or flattening arrays.
+
+Syntax:
+
+```javascript
+
+array.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue])
+```
+
+- callback: A function to execute on each element of the array. It takes four arguments:
+  - accumulator: The accumulator accumulates the callback's return values. It is the accumulated result of previous executions.
+  - currentValue: The current element being processed in the array.
+  - index (Optional): The index of the current element being processed.
+  - array (Optional): The array reduce was called upon.
+- initialValue (Optional): A value to use as the first argument to the first call of the callback. If no initial value is supplied, the first element in the array will be used as the initial accumulator value and skipped as currentValue.
+
+```javascript
+let numbers = [1, 2, 3, 4, 5];
+
+// Calculating the sum of all numbers using arrow function
+let sum = numbers.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  0
+);
+
+console.log(sum); // Output: 15
+```
+
 ## Summary
 
 | Method      | Description                                   | Example           |
