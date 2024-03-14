@@ -127,6 +127,8 @@ const clonedObj = structuredClone(obj);
 
 > When dealing with complex objects or circular references, structuredClone() is the preferred choice as it provides more reliable deep cloning functionality.
 
+---
+
 ### 7. Deep Copy For Array
 
 it's essential to understand the distinction between copying by reference and creating a true duplicate. The slice method provides a convenient way to achieve a genuine copy of an **array**.
@@ -140,6 +142,8 @@ console.log(myHobbies2); // Output: ["sports", "cooking"]
 ```
 
 > Even though we modified the hobbies array by adding "reading," the `myHobbies2` array remains unaffected. This behavior ensures that both arrays are distinct entities with their own set of values.
+
+---
 
 ### 8. Side Effects in Functions
 
@@ -167,11 +171,13 @@ console.log(modifiedArray); // Output: ["old value", "new value"]
 
 This approach helps maintain the integrity of data and prevents unexpected behavior caused by side effects.
 
-### 8. Conclusion:
+---
+
+### 9. Conclusion:
 
 Understanding primitive and reference types, and their memory management, is crucial in JavaScript. Primitives are copied by value, while reference types are copied by reference, impacting how modifications affect variables.
 
-### 9. Takeaways:
+### 10. Takeaways:
 
 - **By Value vs. By Reference:** Mastering the distinction between these two concepts is fundamental to writing reliable JavaScript code.
 
