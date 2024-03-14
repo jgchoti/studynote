@@ -48,6 +48,25 @@ arr.unshift(0); // Adds 0 to the beginning of the array
 console.log(arr); // Output: [0, 1, 2, 3]
 ```
 
+## 5. arr.slicing()
+
+Use `slice()` to extract a portion of an array without modifying the original array.
+
+Syntax:
+
+```javascript
+array.slice(startIndex, endIndex);
+```
+
+Example:
+
+```javascript
+let originalArray = [1, 2, 3, 4, 5];
+let slicedArray = originalArray.slice(1, 4); // Extracts elements from index 1 to 3
+console.log(slicedArray); // Output: [2, 3, 4]
+console.log(originalArray); // Output: [1, 2, 3, 4, 5] (original array remains unchanged)
+```
+
 ## Summary
 
 | Method      | Description                                   | Example           |
