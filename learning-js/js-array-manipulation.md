@@ -67,7 +67,7 @@ console.log(slicedArray); // Output: [2, 3, 4]
 console.log(originalArray); // Output: [1, 2, 3, 4, 5] (original array remains unchanged)
 ```
 
-## 6. filter()
+## 6. arr.filter()
 
 This method create a new array with all elements that pass a certain condition provided by a callback function. This method doesn't modify the original array but instead returns a new array containing only the elements that meet the specified criteria.
 
@@ -102,7 +102,7 @@ console.log(evenNumbers); // Output: [2, 4]
 
 ```
 
-## reduce()
+## 7. arr.reduce()
 
 The method in JavaScript is used to apply a function to each element in the array and reduce the array to a single value. It executes a provided function for each value of the array (from left to right), resulting in a single output value. This method is often used for tasks such as summing up values, calculating averages, or flattening arrays.
 
