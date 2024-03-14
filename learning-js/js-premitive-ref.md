@@ -38,6 +38,8 @@ console.log(objB.value); // Output: 20
 
 - **Primitive Types (Copied by Value):** Actual value is copied.
 - **Reference Types (Copied by Reference):** Memory address is copied.
+[Ref](https://www.geeksforgeeks.org/primitive-and-reference-value-in-javascript/)
+![Copied by Reference](https://media.geeksforgeeks.org/wp-content/uploads/20201227083737/gfgfgfgfgffg-660x415.png)
 
 ### 5. Object.assign(), Object.create(), and Object Cloning
 
