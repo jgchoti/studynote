@@ -132,14 +132,89 @@ let sum = numbers.reduce(
 console.log(sum); // Output: 15
 ```
 
+## 8. `arr.map()`
+
+The `map()` method creates a new array populated with the results of calling a provided function on **every element** in the calling array. It's often used to transform each element of the array in some way.
+
+Syntax:
+
+```javascript
+let newArray = array.map(function callback(currentValue, index, array) {
+  // Return element for newArray
+}, thisArg);
+```
+
+Example:
+
+```javascript
+let numbers = [1, 2, 3, 4, 5];
+
+// Doubling each number in the array
+let doubledNumbers = numbers.map((num) => num * 2);
+
+console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
+```
+
+## 9. `arr.every()`
+
+The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns **true if all elements pass the test**, otherwise false.
+
+Syntax:
+
+```javascript
+let result = array.every(function callback(currentValue, index, array) {
+  // Return true or false based on condition
+}, thisArg);
+```
+
+Example:
+
+```javascript
+let numbers = [1, 2, 3, 4, 5];
+
+// Checking if all numbers are greater than 0
+let allPositive = numbers.every((num) => num > 0);
+
+console.log(allPositive); // Output: true
+```
+
+## 10. `arr.some()`
+
+The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns **true if at least one element passes the test**, otherwise false.
+
+Syntax:
+
+```javascript
+let result = array.some(function callback(currentValue, index, array) {
+  // Return true or false based on condition
+}, thisArg);
+```
+
+Example:
+
+```javascript
+let numbers = [1, 2, 3, 4, 5];
+
+// Checking if there is at least one even number
+let hasEvenNumber = numbers.some((num) => num % 2 === 0);
+
+console.log(hasEvenNumber); // Output: true
+```
+
 ## Summary
 
-| Method      | Description                                   | Example           |
-| ----------- | --------------------------------------------- | ----------------- |
-| `push()`    | Adds element(s) to the end of the array       | `arr.push(4);`    |
-| `pop()`     | Removes the last element from the array       | `arr.pop();`      |
-| `shift()`   | Removes the first element from the array      | `arr.shift();`    |
-| `unshift()` | Adds element(s) to the beginning of the array | `arr.unshift(0);` |
+| Method      | Description                                                                                        | Example                            |
+| ----------- | -------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| `push()`    | Adds element(s) to the end of the array                                                            | `arr.push(4);`                     |
+| `pop()`     | Removes the last element from the array                                                            | `arr.pop();`                       |
+| `shift()`   | Removes the first element from the array                                                           | `arr.shift();`                     |
+| `unshift()` | Adds element(s) to the beginning of the array                                                      | `arr.unshift(0);`                  |
+| `slice()`   | Extracts a portion of an array **without modifying** the original                                  | `arr.slice(startIndex, endIndex);` |
+| `filter()`  | Creates a new array with elements passing a condition provided by a callback function              | `arr.filter(callback);`            |
+| `reduce()`  | Applies a function to each element in the array and reduces the array to a single value            | `arr.reduce(callback);`            |
+| `map()`     | Creates a new array with results of calling a function on every element in the calling array       | `arr.map(callback);`               |
+| `every()`   | Tests whether all elements in the array pass a condition provided by a callback function           | `arr.every(callback);`             |
+| `some()`    | Tests whether at least one element in the array passes a condition provided by a callback function | `arr.some(callback);`              |
 
 > push() and pop() are used to add and remove elements from the **_end_** of an array, respectively.
 
