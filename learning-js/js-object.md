@@ -126,6 +126,6 @@ let person2 = new Person("Alice", 30, "green");
 
 ## Ref
 
-[Javascript Objects Explained](https://www.youtube.com/watch?v=rLPwCAqyCAE)
-[What Are Objects in JavaScript](https://www.youtube.com/watch?v=4uVwGw317QM)
-[How to Create Object Constructors](https://www.youtube.com/watch?v=e1yBONtbTuA&t=2s)
+- [Javascript Objects Explained](https://www.youtube.com/watch?v=rLPwCAqyCAE)
+- [What Are Objects in JavaScript](https://www.youtube.com/watch?v=4uVwGw317QM)
+- [How to Create Object Constructors](https://www.youtube.com/watch?v=e1yBONtbTuA&t=2s)
