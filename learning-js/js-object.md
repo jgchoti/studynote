@@ -1,4 +1,4 @@
-# Object and Object Manipulation in JavaScript
+# Object in JavaScript
 
 ## Objects in JavaScript
 
