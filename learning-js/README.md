@@ -12,7 +12,7 @@
 
 - [Array Manipulation](https://github.com/jgchoti/studynote/blob/main/learning-js/js-array-manipulation.md)
 
-- [Object and Object Manipulation in JavaScript](https://github.com/jgchoti/studynote/edit/main/learning-js/README.md)
+- [Object and Object Manipulation in JavaScript]()
 
 - [Pure Function](https://github.com/jgchoti/studynote/blob/main/learning-js/js-pure-function.md)
 
