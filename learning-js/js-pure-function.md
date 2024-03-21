@@ -42,6 +42,24 @@
 - **Parameterization:**
 
   - Pure functions should have at least one parameter.
+    - Scenarios where a pure function doesn't require any parameters
+        - Functions that always return the same value regardless of any input.
+          
+          ```javascript
+          function returnConstant()
+          return 42;
+          }
+          ```
+      
+      - Functions operating solely on external state (such as global variables or environment variables)
+        
+           ```javascript
+        const externalState = 10;
+           function pureFunctionWithoutParameters() {
+           return externalState * 2;
+           }
+          ```
+  
   - Parameters should be immutable and not modified within the function.
 
 - **Return Values:**
