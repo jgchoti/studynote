@@ -63,3 +63,9 @@
 - While not every function needs to be pure, understanding and using pure functions improves code quality and maintainability.
 - Following the rules of pure functions results in more robust and scalable applications.
 - Functional programming principles, including pure functions, provide valuable tools for developers to write efficient and maintainable code.
+
+---
+#### Ref
+
+- [JavaScript Pure Functions](https://www.youtube.com/watch?v=BceIT1Lke-E)
+- [What are Pure Functions?](https://www.youtube.com/watch?v=ZXxahQS1PN8)
