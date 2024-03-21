@@ -1,4 +1,4 @@
-# Understanding Pure Functions
+# Pure Functions
 
 ## Introduction to Pure Functions:
 
@@ -36,27 +36,27 @@
 
 - **Avoid Mutations:**
 
-- Impure functions should not modify external data.
-- Refactor functions to return new data instead of mutating existing data.
+  - Impure functions should not modify external data.
+  - Refactor functions to return new data instead of mutating existing data.
 
 - **Parameterization:**
 
-- Pure functions should have at least one parameter.
-- Parameters should be immutable and not modified within the function.
+  - Pure functions should have at least one parameter.
+  - Parameters should be immutable and not modified within the function.
 
 - **Return Values:**
-- Pure functions always return a value.
-- Not returning anything indicates impurity.
+  - Pure functions always return a value.
+  - Not returning anything indicates impurity.
 
 ## Benefits of Pure Functions:
 
 - **Clean and Predictable Code:**
-- Pure functions lead to cleaner and more predictable codebases.
+  - Pure functions lead to cleaner and more predictable codebases.
 - **Ease of Testing and Debugging:**
-- Pure functions are easier to test as they produce consistent results.
-- Debugging is simplified due to the absence of side effects.
+  - Pure functions are easier to test as they produce consistent results.
+  - Debugging is simplified due to the absence of side effects.
 - **Decoupled and Reusable:**
-- Pure functions are decoupled from the rest of the application, making them easier to reuse and maintain.
+  - Pure functions are decoupled from the rest of the application, making them easier to reuse and maintain.
 
 ## Conclusion:
 
