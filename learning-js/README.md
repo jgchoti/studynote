@@ -10,7 +10,7 @@
 
 - [Primitive Types and Reference Types](https://github.com/jgchoti/studynote/blob/main/learning-js/js-premitive-ref.md) This note also covers the Copying Behavior in JavaScript, providing an explanation of how copying operates differently for primitive and reference types.
 
--[String Manipulation]
+- [String Manipulation](https://github.com/jgchoti/studynote/blob/main/learning-js/js-string-manaipulation.md)
 
 - [Array Manipulation](https://github.com/jgchoti/studynote/blob/main/learning-js/js-array-manipulation.md)
 
