@@ -20,4 +20,4 @@
 
 - [Control Flow Structures in JavaScript](https://github.com/jgchoti/studynote/blob/main/learning-js/js-control-flow.md)
 
--[Documentation and Best Practices]
+- [Documentation and Best Practices](https://github.com/jgchoti/studynote/blob/main/learning-js/js-documentation.md)
