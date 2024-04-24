@@ -131,12 +131,18 @@ const clonedObj = structuredClone(obj);
 
 ### 7. Deep Copy For Array
 
-it's essential to understand the distinction between copying by reference and creating a true duplicate. The slice method provides a convenient way to achieve a genuine copy of an **array**.
+it's essential to understand the distinction between copying by reference and creating a true duplicate.
+
+**To copy Array**
+
+- `array.slice()`
+- `Array.from(array)`
 
 ```javascript
 let hobbies = ["sports", "cooking"];
 let myHobbies1 = hobbies; // Incorrect way - creates a reference, not a copy
 let myHobbies2 = hobbies.slice(); // Correct way - creates a real copy
+let myHobbies3 = Array.from(hobbies); // Another correct way - creates a real copy
 hobbies.push("reading");
 console.log(myHobbies2); // Output: ["sports", "cooking"]
 ```
