@@ -99,16 +99,20 @@ Both array.slice() and Array.from(array) create shallow copies of arrays. They c
 
 **To copy Array**
 
-- `array.slice()`
-- `Array.from(array)`
+- array.slice()
+- Array.from(array)
+- Spread Method ([ ...array ])
 
 ```javascript
 let hobbies = ["sports", "cooking"];
 let myHobbies1 = hobbies; // Incorrect way - creates a reference, not a copy
 let myHobbies2 = hobbies.slice(); // Correct way - creates a real copy
 let myHobbies3 = Array.from(hobbies); // Another correct way - creates a real copy
+let myHobbies4 = [...hobbies]; // Spread method - creates a real copy
+
 hobbies.push("reading");
 console.log(myHobbies2); // Output: ["sports", "cooking"]
+
 ```
 
 > Even though we modified the hobbies array by adding "reading," the `myHobbies2` array remains unaffected. This behavior ensures that both arrays are distinct entities with their own set of values.
@@ -117,16 +121,23 @@ console.log(myHobbies2); // Output: ["sports", "cooking"]
 
 ## Summary
 
+### For Objects:
+
 | Method                         | Advantages                                      | Limitations                                            |
 |--------------------------------|-------------------------------------------------|---------------------------------------------------------|
 | Object.assign()                | Simple usage, shallow copy                      | Copies nested properties by reference                   |
 | Object.create()                | Prototype-based, shallow copy                   | Copies nested properties by reference                   |
+| Spread Method ({ ...obj })     | Simple usage, creates true copy of object      | Limited to object cloning, does not handle nested objects |
 | JSON.stringify()               | Simple, handles basic data structures          | Fails with circular references, lacks function support  |
 | structuredClone()              | Handles circular references, preserves functions| Browser compatibility may vary, more complex usage      |
+
+### For Arrays:
+
+| Method                         | Advantages                                      | Limitations                                            |
+|--------------------------------|-------------------------------------------------|---------------------------------------------------------|
 | array.slice()                  | Simple usage, creates true copy of array       | Limited to arrays, does not handle nested arrays        |
 | Array.from(array)              | Simple usage, creates true copy of array       | Limited to arrays, does not handle nested arrays        |
-| Spread Method ({ ...obj })     | Simple usage, creates true copy of object      | Limited to object cloning, does not handle nested objects |
-
+| Spread Method ([ ...array ])   | Simple usage, creates true copy of array       | Limited to array cloning, does not handle nested arrays  |
 
 
 #### List of References
