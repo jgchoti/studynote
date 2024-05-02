@@ -74,7 +74,7 @@ const obj = { name: "John", age: 30 };
 const clonedObj = JSON.parse(JSON.stringify(obj));
 ```
 
-> JSON.parse() is a built-in JavaScript method used to parse JSON (JavaScript Object Notation) strings and convert them into JavaScript objects.
+> `JSON.parse()` is a built-in JavaScript method used to parse JSON (JavaScript Object Notation) strings and convert them into JavaScript objects.
 
 ### 2.2 Using structuredClone() for Deep Cloning
 
@@ -95,13 +95,13 @@ const clonedObj = structuredClone(obj);
 
 ## 3. Copy For Array
 
-Both array.slice() and Array.from(array) create shallow copies of arrays. They copy the elements of the original array into a new array, ensuring that modifications made to the original array do not affect the copied one. However, they do not handle nested arrays, copying them by reference.
+Both `array.slice()` and `Array.from(array)` create shallow copies of arrays. They copy the elements of the original array into a new array, ensuring that modifications made to the original array do not affect the copied one. However, they do not handle nested arrays, copying them by reference.
 
 **To copy Array**
 
-- array.slice()
-- Array.from(array)
-- Spread Method ([ ...array ])
+- `array.slice()`
+- `Array.from(array)`
+- Spread Method (`[ ...array ]`)
 
 ```javascript
 let hobbies = ["sports", "cooking"];
