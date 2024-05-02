@@ -97,4 +97,4 @@ Understanding primitive and reference types, and their memory management, is cru
 - **Garbage Collection**:
   JavaScript's garbage collection mechanism automatically removes values that are no longer referenced, freeing up memory.
 
-- [Copying Arrays and Objects in JavaScript]
+- Read more about [Copying Arrays and Objects in JavaScript](https://github.com/jgchoti/studynote/blob/main/learning-js/js-array-obj-copy.md)
