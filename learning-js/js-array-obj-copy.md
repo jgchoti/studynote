@@ -113,7 +113,23 @@ console.log(myHobbies2); // Output: ["sports", "cooking"]
 
 > Even though we modified the hobbies array by adding "reading," the `myHobbies2` array remains unaffected. This behavior ensures that both arrays are distinct entities with their own set of values.
 
-List of References
+---
+
+## Summary
+
+| Method                         | Advantages                                      | Limitations                                            |
+|--------------------------------|-------------------------------------------------|---------------------------------------------------------|
+| Object.assign()                | Simple usage, shallow copy                      | Copies nested properties by reference                   |
+| Object.create()                | Prototype-based, shallow copy                   | Copies nested properties by reference                   |
+| JSON.stringify()               | Simple, handles basic data structures          | Fails with circular references, lacks function support  |
+| structuredClone()              | Handles circular references, preserves functions| Browser compatibility may vary, more complex usage      |
+| array.slice()                  | Simple usage, creates true copy of array       | Limited to arrays, does not handle nested arrays        |
+| Array.from(array)              | Simple usage, creates true copy of array       | Limited to arrays, does not handle nested arrays        |
+| Spread Method ({ ...obj })     | Simple usage, creates true copy of object      | Limited to object cloning, does not handle nested objects |
+
+
+
+#### List of References
 
 - [modern way to deep clone object in javascript](https://medium.com/@saikiran-dev/absolute-modern-way-to-deep-clone-object-in-javascript-61f0282db8de)
 
