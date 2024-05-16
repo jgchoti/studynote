@@ -22,9 +22,11 @@ Feel free to explore different sections of this repository:
 
 **[Agile Development](https://github.com/jgchoti/studynote/tree/main/agile-development):** Agile Development processes and best practices
 
-**[Design](https://github.com/jgchoti/studynote/tree/main/design):** Cover the basic of design principles.
+**[Design](https://github.com/jgchoti/studynote/tree/main/design):** Covers the basic of design principles.
 
 **[JavaScript Fundamentals](https://github.com/jgchoti/studynote/tree/main/learning-js):** Covers the basics of JavaScript.
+
+**[Document Object Model (DOM)](https://github.com/jgchoti/studynote/blob/main/dom/):** Covers DOM Manipulation and Basic Event Listeners in JavaScript
 
 **[JavaScript Learning Journal](https://github.com/jgchoti/studynote/blob/main/js-learning-journal/README.md)** This learning journal documents my journey through solving JavaScript challenges
 
