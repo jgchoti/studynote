@@ -115,6 +115,11 @@ console.log("Calling friend...");
 
 In this setup, `orderPizza` takes a callback function. It calls the callback with the pizza once it’s ready.
 
+> another example, with event listeners or iterators like forEach, we pass callback functions
+> to handle events or process array items. We can define these functions in place
+> or pass them separately. It's essential to avoid calling functions unless
+> they return another function to maintain readability.
+
 #### Callback Hell
 
 The problem with callbacks is they can become difficult to read if you have many dependent tasks. This is known as callback hell:
@@ -148,6 +153,29 @@ callShop(() => {
 ```
 
 > This code is hard to read and maintain.
+
+#### Promises
+
+Promises are like guarantees to provide information in the future, particularly useful for handling asynchronous tasks.
+In JavaScript, they're commonly used for operations like fetching data from servers.
+Here's how they work with a `fetch` request:
+
+```js
+fetch("https://api.example.com/pizza")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Failed to fetch pizza data");
+    }
+    return response.json();
+  })
+  .then((pizzaData) => {
+    // Further processing of fetched pizza data
+    console.log("Fetched pizza data:", pizzaData);
+  })
+  .catch((error) => {
+    console.error("Error fetching pizza data:", error);
+  });
+```
 
 ### Summary
 
