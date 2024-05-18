@@ -55,10 +55,6 @@ The call stack is a data structure that tracks function calls in a program. When
 
 > So, just like the pizza orders are processed in the order they were placed, JavaScript executes function calls in the order they were made. This ensures that things happen in a neat and orderly manner, without any confusion about which function should be dealt with next.
 
-### Task Queue and Microtask Queue:
-
-These queues hold tasks and microtasks, respectively, that are waiting to be executed. Both are managed by the Event Loop, which periodically checks them and moves tasks to the Call Stack for execution when it's ready. Tasks can include things like timers (setTimeout), DOM events, or AJAX requests, while microtasks are typically related to promises and other asynchronous operations.
-
 ### Web APIs:
 
 These are extra features provided by the browser (or environment like Node.js). They handle asynchronous tasks like setTimeout, AJAX requests, and DOM manipulation. These APIs are not part of the JavaScript runtime itself.
@@ -85,13 +81,19 @@ In this example, `setTimeout` is an asynchronous function.
 It means it’s not synchronized with the rest of the code. When we run it, the console logs "Ordering pizza...",
 then it immediately logs "Pizza was ordered", and "Eating pizza: undefined". Finally, after two seconds, "Pizza is ready: 🍕" is logged.
 
-### Callback Queue
+### Task Queue and Microtask Queue:
+
+These queues hold tasks and microtasks, respectively, that are waiting to be executed. Both are managed by the Event Loop, which periodically checks them and moves tasks to the Call Stack for execution when it's ready. Tasks can include things like timers (setTimeout), DOM events, or AJAX requests, while microtasks are typically related to promises and other asynchronous operations.
+
+> the Task Queue and Microtask Queue are more general-purpose, while the Callback Queue specifically deals with callback functions resulting from asynchronous operations.
+
+#### Callback Queue
 
 > This queue holds callbacks that are waiting to be executed once the stack is clear.
 
 This queue is also managed by the Event Loop and holds callback functions that are waiting to be executed. However, callback functions in the Callback Queue typically result from asynchronous operations like setTimeout, AJAX requests, or event handlers. When these operations complete, their associated callback functions are placed in the Callback Queue. The Event Loop then moves these callback functions to the Call Stack for execution when the stack is empty and the program is ready to handle them.
 
-> the Task Queue and Microtask Queue are more general-purpose, while the Callback Queue specifically deals with callback functions resulting from asynchronous operations.
+
 
 #### Using Callbacks
 
