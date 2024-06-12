@@ -9,5 +9,5 @@ how databases work and how to interact with them using SQL.
 
 - [Database Introduction](https://github.com/jgchoti/studynote/blob/main/database/intro-database.md)
 - [Basic SQL](https://github.com/jgchoti/studynote/blob/main/database/basic-sql.md)
-- [SQL Commands]
+- [SQL Commands](https://github.com/jgchoti/studynote/blob/main/database/sql-commands.md)
 
