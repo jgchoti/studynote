@@ -8,6 +8,6 @@ how databases work and how to interact with them using SQL.
 ## Table of Contents
 
 - [Database Introduction]
-- [Basic SQL]
+- [Basic SQL](https://github.com/jgchoti/studynote/blob/main/database/basic-sql.md)
 - [SQL Commands]
 
