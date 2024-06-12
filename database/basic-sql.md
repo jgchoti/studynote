@@ -20,3 +20,5 @@ Relational databases use tables of data related by common fields (relationships)
 - **Schema:** A design blueprint of the database showing tables and their relationships.
 - **Row:** Represents a single entity.
 - **Column:** Represents an attribute of the entity.
+
+![Relational Databases](https://planetscale.com/_next/image?url=%2Fassets%2Fblog%2Fcontent%2Fschema-design-101-relational-databases%2Fcd0ca647c86b976bd395a8d78fa38b4010ee78d3-1552x872.png&w=1080&q=90)
