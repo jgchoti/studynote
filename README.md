@@ -30,9 +30,10 @@ Feel free to explore different sections of this repository:
 
 **[JavaScript Learning Journal](https://github.com/jgchoti/studynote/blob/main/js-learning-journal/README.md)** This learning journal documents my journey through solving JavaScript challenges
 
+**[Database](https://github.com/jgchoti/studynote/tree/main/database):** Discusses database concepts and basic SQL.
+
 <!-- - **[Backend Technologies](link-to-backend-technologies):** Explores server-side development using Node.js, Express, and more. -->
 <!-- - **[Frontend Technologies](link-to-frontend-technologies):** Dives into client-side development with HTML, CSS, and popular frameworks. -->
-<!-- - **[Database Management](link-to-database-management):** Discusses database concepts and practical usage. -->
 
 ## Contribution and Feedback
 
