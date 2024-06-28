@@ -30,7 +30,7 @@ Feel free to explore different sections of this repository:
 
 **[JavaScript Learning Journal](https://github.com/jgchoti/studynote/blob/main/js-learning-journal/README.md)** This learning journal documents my journey through solving JavaScript challenges
 
-**[Asynchronous Programming](https://github.com/jgchoti/studynote/blob/main/dom/):** Covers concepts like callbacks, promises, and async/await.
+**[Asynchronous Programming](https://github.com/jgchoti/studynote/tree/main/asynchronous-programming):** Covers concepts like callbacks, promises, and async/await.
 
 **[Database](https://github.com/jgchoti/studynote/tree/main/database):** Discusses database concepts and basic SQL.
 
