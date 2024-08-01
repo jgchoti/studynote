@@ -39,7 +39,7 @@ Feel free to explore different sections of this repository:
 
 ## Contribution and Feedback
 
-If you notice any inaccuracies or have suggestions for improvement, please feel free to contribute by submitting a pull request. Your feedback is highly appreciated!
+If you notice any inaccuracies or have suggestions for improvement, please feel free to contribute by submitting a pull request OR send me a message. Your feedback is highly appreciated!
 
 ---
 
