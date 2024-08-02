@@ -30,7 +30,9 @@ const PATH = dirname(__filename);
 > `fileURLToPath`and `dirname`: Utilities to get the current file's path and directory name, respectively.
 
 > Get the Current Module's Directory Path:
+
 > **__filename**: Converts the current module's URL to a file path.
+
 > **PATH**: Extracts the directory name from the file path.
 
 ### Asynchronous File Operations
@@ -44,6 +46,7 @@ const filePath = path.join(PATH, 'name.txt');
 ```
 
 > `nameToSave`: The content to be written to the file.
+
 > `filePath`: The full path where the file will be saved, combining the current directory and the file name (name.txt).
 
 ### Write to the file
@@ -58,9 +61,13 @@ fs.writeFile(filePath, nameToSave, 'utf8', (err) => {
 ```
 
 > `fs.writeFile`: Writes data to a file, replacing the file if it already exists.
+
 > `filePath`: Path to the file.
+
 > `nameToSave`: Data to be written.
+
 > `utf8`: Encoding type.
+
 > Callback function: Called after the write operation completes. If there's an error, it logs the error; otherwise, it logs "File saved!".
 
 
@@ -76,8 +83,11 @@ fs.readFile(filePath, 'utf8', (err, data) => {
 ```
 
 > `fs.readFile`: Reads the contents of a file
+
 > `filePath`: Path to the file.
+
 > `utf8`: Encoding type.
+
 > Callback function: Called after the read operation completes. If there's an error, it logs the error; otherwise, it logs the file contents.
 
 ### Append content to the file
@@ -94,9 +104,13 @@ fs.appendFile(filePath, contentToAppend, 'utf8', (err) => {
 ```
 
 > `fs.appendFile`: Appends data to a file. If the file does not exist, it creates a new file.
+
 > `filePath`: Path to the file.
+
 > `contentToAppen`d`: Data to be appended.
+
 > `utf8`: Encoding type.
+
 > Callback function: Called after the append operation completes. If there's an error, it logs the error; otherwise, it logs "Appended to a file successfully!".
 
 ### Delete a file
@@ -112,7 +126,9 @@ fs.unlink(filePath, (err) => {
 ```
 
 - `fs.unlink`: Deletes a file.
+  
 - `filePath`: Path to the file.
+  
 - Callback function: Called after the delete operation completes. If there's an error, it logs the error; otherwise, it logs "File deleted successfully!".
 
 
@@ -133,8 +149,11 @@ try {
 ```
 
 > `fs.writeFileSync`: Synchronously writes data to a file, replacing the file if it already exists.
+
 > `filePath`: Path to the file.
+
 > `Data`: 'This is a synchronous write operation.'
+
 > `try/catch`: Used to handle errors. If there's an error, it logs the error; otherwise, it logs "File written synchronously".
 
 
@@ -150,8 +169,11 @@ try {
 ```
 
 > `fs.readFileSync`: Synchronously reads the contents of a file.
+
 > `filePath`: Path to the file ('example.txt').
+
 > `utf8`: Encoding type.
+
 > `try/catch`: Used to handle errors. If there's an error, it logs the error; otherwise, it logs the file contents.
 
 
@@ -167,8 +189,11 @@ try {
 ```
 
 > `fs.appendFileSync`: Synchronously appends data to a file. If the file does not exist, it creates a new file.
+
 > `filePath`: Path to the file ('example.txt').
+
 > `Data`: '\nThis is an appended line.'
+
 > `try/catch`: Used to handle errors. If there's an error, it logs the error; otherwise, it logs "File appended synchronously".
 
 ### Delete a File Synchronously
@@ -183,7 +208,9 @@ try {
 ```
 
 > `fs.unlinkSync`: Synchronously deletes a file.
+
 > `filePath`: Path to the file ('example.txt').
+
 > `try/catch`: Used to handle errors. If there's an error, it logs the error; otherwise, it logs "File deleted synchronously".
 
 
@@ -217,7 +244,11 @@ Setting Up Debugging in Node.js Projects
 ```
 
 > Understanding the Configuration:
+
 > "type": "node" specifies that the debugger is set up for Node.js.
+
 > "request": "launch" indicates that this configuration launches the debugger.
+
 > "skipFiles" allows skipping specific internal Node.js files.
+
 > "program": "${file}" defines the entry point for debugging.
