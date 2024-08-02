@@ -125,11 +125,11 @@ fs.unlink(filePath, (err) => {
 });
 ```
 
-- `fs.unlink`: Deletes a file.
-  
-- `filePath`: Path to the file.
-  
-- Callback function: Called after the delete operation completes. If there's an error, it logs the error; otherwise, it logs "File deleted successfully!".
+>`fs.unlink`: Deletes a file.
+
+>`filePath`: Path to the file.
+
+>Callback function: Called after the delete operation completes. If there's an error, it logs the error; otherwise, it logs "File deleted successfully!".
 
 
 ## Synchronous File Operations
