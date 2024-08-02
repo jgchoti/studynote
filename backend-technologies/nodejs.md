@@ -226,7 +226,6 @@ Setting Up Debugging in Node.js Projects
   - Content for launch.json:
 
 ```json
-
 {
   "version": "0.2.0",
   "configurations": [
