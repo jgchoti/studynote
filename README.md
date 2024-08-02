@@ -34,7 +34,7 @@ Feel free to explore different sections of this repository:
 
 **[JavaScript Learning Journal](https://github.com/jgchoti/studynote/blob/main/js-learning-journal/README.md)** This learning journal documents my journey through solving JavaScript challenges
 
-**[Backend Technologies](link-to-backend-technologies):** Explores server-side development using Node.js, Express, and more.
+**[Backend Technologies](https://github.com/jgchoti/studynote/tree/main/backend-technologies):** Explores server-side development using Node.js, Express, and more.
 <!-- - **[Frontend Technologies](link-to-frontend-technologies):** Dives into client-side development with HTML, CSS, and popular frameworks. -->
 
 ## Contribution and Feedback
