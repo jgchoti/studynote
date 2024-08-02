@@ -22,6 +22,6 @@ Following best practices ensures that JavaScript code is efficient, readable, an
 **Coding Standards and Conventions**
 Adhering to coding standards and conventions promotes consistency and collaboration in JavaScript development. Some widely adopted coding standards include:
 
-- ESLint: A popular JavaScript linting tool that enforces coding standards and detects common errors.
-- Airbnb JavaScript Style Guide
-- Google JavaScript Style Guide
+- [ESLint: A popular JavaScript linting tool that enforces coding standards and detects common errors.](https://eslint.org/docs/latest/)
+- [Airbnb JavaScript Style Guide](https://airbnb.io/javascript/)
+- [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
