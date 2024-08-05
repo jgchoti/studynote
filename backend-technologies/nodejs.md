@@ -251,3 +251,80 @@ Setting Up Debugging in Node.js Projects
 > "skipFiles" allows skipping specific internal Node.js files.
 
 > "program": "${file}" defines the entry point for debugging.
+
+## Environment Variables and Process Arguments
+
+### Using process.env and process.argv
+
+- **process.env** is an object storing information about the environment in which the process is running.
+
+```javascript
+let word = process.argv[2];
+```
+
+- ***process.argv:** An array containing command-line arguments passed when the Node.js process was launched.
+  - `process.argv[0]` is the path to the Node.js executable.
+  - `process.argv[1]` is the path to the JavaScript file being executed.
+  - `process.argv[2]` and onwards are the actual command-line arguments passed by the user.
+  
+### OS Module
+Interacting with the OS Module
+
+```javascript
+const os = require('os');
+
+const local = {  
+  'Home Directory': os.homedir(),    
+  'Operating System': os.type(),
+  'Last Reboot': os.uptime()
+};
+```
+
+Methods provided by the os module:
+
+- `os.type()`: Returns the computer’s operating system.
+  
+- `os.arch()`: Returns the operating system CPU architecture.
+  
+- `os.networkInterfaces()`: Returns information about the network interfaces of the computer, such as IP and MAC address.
+
+- `os.homedir()`: Returns the current user’s home directory.
+  
+- `os.hostname()`: Returns the hostname of the operating system.
+
+- `os.uptime()`: Returns the system uptime, in seconds.
+
+## HTTP Methods and Status Codes
+
+### HTTP Methods
+
+`POST`: Request to create a new resource.
+`PUT`: Request to update an existing resource.
+`GET`: Request to retrieve data.
+
+### HTTP Status Codes
+
+`200`: Success
+
+## Event Loop and Asynchronous Programming in Node.js
+
+### Event Loop
+Node.js runs on a single thread, executing one line at a time. The event loop manages multiple tasks concurrently, allowing for non-blocking I/O operations.
+
+### setTimeout
+Used to delay the execution of a callback function.
+
+## Summary
+
+- Node.js extends JavaScript's capabilities to interact with the file system and other system aspects.
+- **File System Module (fs)** work with the file system.
+- `process.env`: Stores environment information
+- `process.argv`: Command-line arguments array.
+  - `argv[0]`: Node.js executable path.
+  - `argv[1]`: JavaScript file path.
+  - `argv[2]` and onwards: User arguments.
+- **OS Module** retrieve system information.
+- **HTTP Methods** 
+  - `POST`: Create new resource.
+  - `PUT`: Update existing resource.
+  - `GET`: Retrieve data.
