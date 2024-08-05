@@ -306,13 +306,30 @@ Methods provided by the os module:
 
 `200`: Success
 
-## Event Loop and Asynchronous Programming in Node.js
+## EJS (Embedded JavaScript)
 
-### Event Loop
-Node.js runs on a single thread, executing one line at a time. The event loop manages multiple tasks concurrently, allowing for non-blocking I/O operations.
+EJS Syntax `<%= %>`: Used to embed JavaScript code that evaluates to a value, 
+which is then inserted into the rendered HTML output.
 
-### setTimeout
-Used to delay the execution of a callback function.
+```html
+
+<p>Hello, <%= username %></p>
+```
+
+### Steps to Create an EJS Application
+
+- Initialize the Node application:
+
+```bash
+npm init -y
+```
+
+- Install the required dependencies:
+
+```bash
+
+npm install ejs
+```
 
 ## Summary
 
