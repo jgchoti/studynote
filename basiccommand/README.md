@@ -5,8 +5,8 @@ and Git with this comprehensive study guide.
 
 ## Table of Contents
 
-- [Navigating NPM: A Command Guide](/studynote/basiccommand/npm.md)
-- [Git Commands](/studynote/basiccommand/git.md)
+- [Navigating NPM: A Command Guide](https://github.com/jgchoti/studynote/blob/main/basiccommand/npm.md)
+- [Git Commands](https://github.com/jgchoti/studynote/blob/main/basiccommand/git.md)
 
 ## Overview
 
